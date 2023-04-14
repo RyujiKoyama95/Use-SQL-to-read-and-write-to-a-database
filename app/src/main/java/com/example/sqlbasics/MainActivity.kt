@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch {
             AppDatabase.getDatabase(applicationContext).californiaParkDao().getAll()
         }
+        // SQL文
+
+        // *(ワイルドカード)は全てのカラム
+        // SELECT * FROM テーブル名;
     }
 }
