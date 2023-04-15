@@ -31,5 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         // *(ワイルドカード)は全てのカラム
         // SELECT * FROM テーブル名;
+
+        // カラム名を,区切りで複数選択可能
+        // SELECT name, city, type  FROM park;
     }
 }
