@@ -34,5 +34,12 @@ class MainActivity : AppCompatActivity() {
 
         // カラム名を,区切りで複数選択可能
         // SELECT name, city, type  FROM park;
+
+        // 集計関数
+        // SELECT COUNT(name) FROM park;
+
+        // 重複する値をクエリ
+        // SELECT DISTINCT type FROM park;
+        // SELECT COUNT(DISTINCT type) FROM park;
     }
 }
