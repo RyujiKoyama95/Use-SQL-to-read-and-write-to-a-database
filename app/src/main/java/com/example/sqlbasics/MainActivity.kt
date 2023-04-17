@@ -62,5 +62,19 @@ class MainActivity : AppCompatActivity() {
         // WHERE city LIKE '%San Francisco%'; 検索文字列は%%で囲む
         // WHERE city LIKE 'Sa%'; プレフィックッスは先頭だけ%を省略
         // WHERE city LIKE '%co'; サフィックスは末尾だけ%省略
+
+        // INSERT
+        // INSERT INTO park
+        // VALUES ( 24, 'addName', 'Japan', '9999', null, '999999999', 'aaa' );
+
+        // UPDATE
+        // UPDATE park
+        // SET city = 'Kyoto',
+        // type = 'ccc'
+        // WHERE name = 'Cabrillo';
+
+        // DELETE
+        // DELETE FROM park
+        // WHERE name = 'Castle Mountains';
     }
 }
