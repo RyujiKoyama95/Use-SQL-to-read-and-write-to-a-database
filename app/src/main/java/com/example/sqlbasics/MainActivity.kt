@@ -37,9 +37,30 @@ class MainActivity : AppCompatActivity() {
 
         // 集計関数
         // SELECT COUNT(name) FROM park;
+        // SELECT city, COUNT(*) FROM park;
 
         // 重複する値をクエリ
         // SELECT DISTINCT type FROM park;
         // SELECT COUNT(DISTINCT type) FROM park;
+
+        // WHERE句 文字列は""ではなく''で囲む。読みやすさを考えて句ごとに改行。
+        // 等価演算子は==ではなく=。不等価演算子は!=。
+        // SELECT * FROM park
+        // WHERE city = 'San Diego';
+
+        // WHERE A AND B;
+        // WHERE A OR B;
+        // WHERE NOT A;
+        // SELECT * FROM park
+        // WHERE type = 'national_park' AND city = 'San Francisco';
+        // SELECT * FROM park
+        // WHERE NOT city = 'San Francisco'; 下の書き方でも同じ
+        // WHERE city != 'San Francisco';
+
+        // LIKE 検索
+        // SELECT * FROM park
+        // WHERE city LIKE '%San Francisco%'; 検索文字列は%%で囲む
+        // WHERE city LIKE 'Sa%'; プレフィックッスは先頭だけ%を省略
+        // WHERE city LIKE '%co'; サフィックスは末尾だけ%省略
     }
 }
